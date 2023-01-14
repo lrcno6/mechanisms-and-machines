@@ -1,30 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cmm",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create: Mechanisms & Machines",
+  "description": "CAB-like mechanisms, machines and recipes for original create v0.5",
   "authors": [
-    "Me!"
+    "lrcno6"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/lrcno6/mechanisms-and-machines"
   },
-  "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-3.0",
+  "icon": "assets/cabricality/textures/item/kinetic_mechanism.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "net.lrcno6.cmm.CMM"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": ">=${fabric_api_version}",
-    "create": "${create_version}",
+    "create": "0.5.0g-792",
     "minecraft": "${minecraft_version}"
   }
 }
